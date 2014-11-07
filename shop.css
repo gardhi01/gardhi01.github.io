@@ -32,5 +32,5 @@ body{
   background-image: url(http://sandyhaight.com/wordpress/wp-content/uploads/2011/02/3shopping-cart-600x600.jpg);
 }
 li#incart{
-  text-decoration: strike-through;
+  text-decoration-line: line-through;
 }
