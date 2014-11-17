@@ -12,4 +12,9 @@ section {
   background-color: yellow;
   color: white;
 }
+aside {
+  float: left;
+  width: 80%;
+  height: 500px;
+}
 
