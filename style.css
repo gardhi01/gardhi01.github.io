@@ -5,4 +5,11 @@ ul{
   background: purple;
   color: white;
 }
+section {
+  float: left;
+  width: 20%;
+  height: 500px;
+  background-color: purple;
+  color: white;
+}
 
