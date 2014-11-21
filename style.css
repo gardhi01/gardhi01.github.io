@@ -11,6 +11,8 @@ section {
   height: 1000px;
   background-color: rgb(250, 72, 200);
   color: white;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 aside {
   float: right;
@@ -29,6 +31,7 @@ aside {
     margin-top: 20px;
     margin-bottom: 0px;
     background-color: rgb(99, 256, 200);
+    height: 20px;
   }
   nav li {
     display: inline;
