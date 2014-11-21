@@ -8,14 +8,14 @@ ul{
 section {
   float: left;
   width: 20%;
-  height: 500px;
+  height: 1000px;
   background-color: rgb(250, 72, 200);
   color: white;
 }
 aside {
   float: right;
   width: 80%;
-  height: 500px;
+  height: 1000px;
   }
   header {
     position: fixed;
