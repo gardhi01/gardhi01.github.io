@@ -1,7 +1,7 @@
 body{
   background: pink;
 }
-ul{
+ul.notnav {
   background: purple;
   color: white;
 }
