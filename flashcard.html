@@ -66,12 +66,12 @@
 <p>What... is your favorite color?</p>
 </section>
 </nav>
-<p>0</p>
+<p id=me>0</p>
 <script type=text/javascript>
 counter = 0
 count = function() {
   counter = counter + 1;
-  check = document.querySelector("p");
+  check = document.querySelector("#me");
   check.innerHTML = counter;
 }
 </script>
