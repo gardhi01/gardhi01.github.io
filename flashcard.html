@@ -43,7 +43,7 @@
 </head>
 <body>
 <nav>
-<input type="checkbox" onclick="count();">
+<input type="checkbox" id="cb1" onclick="count(/"cb1/");">
 <section class=answer>
   <p>Sir Lancelot of Camelot</p>
   </section>
@@ -52,7 +52,7 @@
 </section>
 </nav>
 <nav>
-<input type="checkbox" onclick="count();">
+<input type="checkbox" id=cb2 onclick="count(/"checking/");">
 <section class=answer>
 <p>To seek the Holy Grail</p>
 </section>
@@ -61,7 +61,7 @@
 </section>
 </nav>
 <nav>
-<input type="checkbox" onclick="count();">
+<input type="checkbox" id=cb3 onclick="count(/"checking/");">
 <section class=answer>
 <p>Blue</p>
 </section>
@@ -73,10 +73,17 @@
 <p id=me>0</p>
 <script type=text/javascript>
 counter = 0
-count = function() {
+count = function(checking) {
+  checkbox = document.querySelector("#cb1");
+  if (checkbox checked) {
+    counter = counter + 1
+  } else (checkbox unchecked) {
+    counter = counter - 1
+  }
   counter = counter + 1;
   check = document.querySelector("#me");
   check.innerHTML = counter;
+  
 }
 </script>
 </body>
