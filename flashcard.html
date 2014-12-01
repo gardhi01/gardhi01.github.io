@@ -80,6 +80,12 @@ count = function(checking) {
   } else {
     counter = counter - 1
   }
+  second = document.querySelector("#cb2")
+  if (checkbox.checked) {
+    counter = counter + 1
+  } else {
+    counter = counter - 1
+  }
   counter = counter + 1;
   check = document.querySelector("#me");
   check.innerHTML = counter;
