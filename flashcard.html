@@ -73,15 +73,26 @@
 <p id=me>0</p>
 <script type=text/javascript>
 counter = 0
-count = function(checking) {
+count = function(cb1) {
   
-  first = document.querySelector("cb1");
+  first = document.querySelector("#cb1");
   if (first.checked) {
     counter = counter + 1
   } else {
     counter = counter - 1
   }
- 
+  second = document.querySelector("#cb2");
+  if (second.checked) {
+    counter = counter + 1
+  } else {
+    counter = counter - 1
+  }
+  third = document.querySelector("#cb3");
+  if (third.checked) {
+    counter = counter + 1
+  } else {
+    counter = counter - 1
+  }
   counter = counter + 1;
   check = document.querySelector("#me");
   check.innerHTML = counter;
