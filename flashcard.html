@@ -61,7 +61,7 @@
 </section>
 </nav>
 <nav>
-<input type="checkbox" id=three onclick="count('checking');">
+<input type="checkbox" id=cb3 onclick="count('checking');">
 <section class=answer>
 <p>Blue</p>
 </section>
@@ -86,7 +86,7 @@ count = function(checking) {
   } else {
     counter = counter - 1
   }
-  third = document.querySelector("#three");
+  third = document.querySelector("#cb3");
   if (third.checked) {
     counter = counter + 1
   } else {
