@@ -43,7 +43,7 @@
 </head>
 <body>
 <nav>
-<input type="checkbox" id=cb1 onclick="count('cb1');">
+<input type="checkbox" id=cb1 onclick="count('checking');">
 <section class=answer>
   <p>Sir Lancelot of Camelot</p>
   </section>
@@ -52,7 +52,7 @@
 </section>
 </nav>
 <nav>
-<input type="checkbox" id=cb2 onclick="count('cb1');">
+<input type="checkbox" id=cb2 onclick="count('checking');">
 <section class=answer>
 <p>To seek the Holy Grail</p>
 </section>
@@ -61,7 +61,7 @@
 </section>
 </nav>
 <nav>
-<input type="checkbox" id=cb3 onclick="count('cb1');">
+<input type="checkbox" id=cb3 onclick="count('checking');">
 <section class=answer>
 <p>Blue</p>
 </section>
@@ -73,16 +73,27 @@
 <p id=me>0</p>
 <script type=text/javascript>
 counter = 0
-count = function(cb1) {
+count = function(checking) {
   
-  first = document.querySelector("input");
+  first = document.querySelector("#cb1");
   if (first.checked) {
     counter = counter + 1
   } else {
     counter = counter - 1
   }
- 
-  
+  second = document.querySelector("#cb2");
+  if (second.checked) {
+    counter = counter + 1
+  } else {
+    counter = counter - 1
+  }
+  third = document.querySelector("#cb3");
+  if (third.checked) {
+    counter = counter + 1
+  } else {
+    counter = counter - 1
+  }
+  counter = counter + 1
   check = document.querySelector("#me");
   check.innerHTML = counter;
   
