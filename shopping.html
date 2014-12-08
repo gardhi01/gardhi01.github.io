@@ -4,11 +4,20 @@
 <link rel="stylesheet" href="shop.css" type="text/css"
 </head>
 <body>
-<ul>
+<ul id=tocart>
 
 </ul>
-<input type=textbox>
-<button>Add</button>
-<script></script>
+<input type=textbox id=item>
+<button onclick="addtocart()">Add</button>
+<script type=text/javascript>
+  addtocart = function() {
+    newitem = document.querySelector("#item").value;
+    list = document.querySelector("#tocart");
+    listitem = document.createElement("li");
+    content = document.createTextNode
+    listitem.appendChild(contents);
+    list.appendChild(listitem);
+  }
+</script>
 </body>
 </html>
