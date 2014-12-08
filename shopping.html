@@ -11,9 +11,10 @@
 <button onclick="addtocart()">Add</button>
 <script type=text/javascript>
   addtocart = function() {
-    newitem = document.querySelector("#item").value;
-    list = document.querySelector("#tocart");
-    listitem = document.createElement("li");
+    newitem = document.querySelector('#item');
+    list = document.querySelector('#tocart');
+    listitem = document.createElement('li');
+    mygrocery = document.createTextNode('newitem.value');
     content = document.createTextNode;
     listitem.appendChild(contents);
     list.appendChild(listitem);
