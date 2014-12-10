@@ -19,14 +19,16 @@
   addtocart = function() {
     newitem = document.querySelector('#item');
     list = document.querySelector('#tocart');
-    category = document.querySelector('#class')
+    category = document.querySelector('#class');
     listitem = document.createElement('li');
-    bought = document.createElement('checkbox');
+    bought = document.createElement('input');
+    bought.type = checkbox;
     mygrocery = document.createTextNode(newitem.value);
-    listitem.classList.add(category.value)
+    listitem.classList.add(category.value);
     listitem.appendChild(bought);
     listitem.appendChild(mygrocery);
     list.appendChild(listitem);
+    bought.onclick = checkme;
     newitem.value = "";
   }
 </script>
