@@ -31,7 +31,12 @@
     bought.onclick = checkme;
     newitem.value = "";
   }
-
+  checkme = function() {
+    if (this.checked)
+    bought.parentNode.classList.add "done"
+    } else { bought.parentNode.classList.remove("done");
+    }
+  }
 </script>
 </body>
 </html>
