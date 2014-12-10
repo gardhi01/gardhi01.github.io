@@ -17,7 +17,9 @@
     newitem = document.querySelector('#item');
     list = document.querySelector('#tocart');
     listitem = document.createElement('li');
+    bought = document.createElement('checkbox');
     mygrocery = document.createTextNode(newitem.value);
+    listitem.appendChild(bought);
     listitem.appendChild(mygrocery);
     list.appendChild(listitem);
     newitem.value = "";
