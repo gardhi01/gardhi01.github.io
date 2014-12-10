@@ -9,16 +9,21 @@
 </ul>
 <input type=textbox id=item>
 <select id=class>
-<option>one</option>
+<option>fruit</option>
+<option>vegitable</option>
+<option>meat</option>
+<option>clothing</option>
 </select>
 <button onclick="addtocart()">Add</button>
 <script type=text/javascript>
   addtocart = function() {
     newitem = document.querySelector('#item');
     list = document.querySelector('#tocart');
+    category = document.querySelector('#class')
     listitem = document.createElement('li');
     bought = document.createElement('input.checkbox');
     mygrocery = document.createTextNode(newitem.value);
+    listitem.classList.add(category.value)
     listitem.appendChild(bought);
     listitem.appendChild(mygrocery);
     list.appendChild(listitem);
