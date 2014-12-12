@@ -28,6 +28,9 @@ color: blue;
 .school{
   color: yellow;
 }
+.done{
+  text-decoration: line-through;
+}
 ul{
   list-style-type: none;
 }
