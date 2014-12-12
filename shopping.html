@@ -17,6 +17,7 @@
 <button onclick="addtocart()">Add</button>
 <script type=text/javascript>
   addtocart = function() {
+    localSave('tocart');
     newitem = document.querySelector('#item');
     list = document.querySelector('#tocart');
     category = document.querySelector('#class');
@@ -39,7 +40,6 @@
   }
 </script>
 <script src="http://reputablejournal.com/cs130/listsaver.js">
-localSave('tocart');
 restoreList('tocart',checkme);
   </script>
 <script type=('text/javascript')>
